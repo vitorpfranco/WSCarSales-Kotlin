@@ -1,7 +1,6 @@
 package com.example.wsCarSalesKotling.Controllers
 
 import com.example.wsCarSalesKotling.Dtos.BrandDto
-import com.example.wsCarSalesKotling.Dtos.toEntity
 import com.example.wsCarSalesKotling.Models.Brand
 import com.example.wsCarSalesKotling.Services.BrandService
 import org.springframework.beans.factory.annotation.Autowired
@@ -10,6 +9,7 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import javax.validation.Valid
 
+@CrossOrigin(origins = ["*"], maxAge = 3600)
 @RestController
 @RequestMapping("/brands")
 class BrandController() {
